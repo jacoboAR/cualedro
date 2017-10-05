@@ -1,0 +1,25 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/pena-muller.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/pena-muller-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Pena muller
+                                p.article-text A Serra do Larouco (1.538 msnm) é, sen dúbida, o monumento natural máis senlleiro do concello de Cualedro. Divisoria natural entre as comarcas de Monterrei e A Limia, O Larouco é unha cordal montañosa común a Galicia e Portugal que atesoura excepcionais valores paisaxísticos, naturais e culturais. <br>
+                                | Se iniciamos o ascenso desde a aldea de Lucenza, un dos seus accesos naturais, atoparemos as cortiñas da Casa da Neve e, pouco despois, unha serie de monumentais afloramentos graníticos que foron modelados polo tempo. Vento, sol, neve e chuvia conseguiron recortar no horizonte unha serie de batólitos naturais con formas caprichosas, algunhas delas con aspecto figurativo: un dromedario, un galo, un can e hai quen di incluso que un lobo. <br>
+                                | Pero entre todas elas destaca unha, a coñecida como Pena Muller, un penedo granítico natural e notable altura cuxo perfil recorda a silueta dunha dama –un tanto abstracta en realidade– que foi esculpida co cicel ventureiro do tempo. <br>
+                                | Na década de 1980 celebrouse aos pés da Pena Muller a Festa do Larouco, promocionada por un grupo de entusiastas de ambos lados da raia. Iniciada sempre co alborear da gaita, os actos incluían unha ofrenda simbólica ao deus Larouco, en palabras de Rodríguez Colmenero, “destinatario preferente que foi da fe relixiosa e culto dos comarcanos en datas anteriores á chegada do cristianismo”. 
+
+
+        include ../templates/_includes/_scripts.pug

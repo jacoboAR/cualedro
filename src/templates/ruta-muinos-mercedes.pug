@@ -1,0 +1,20 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/muinos-mercedes.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/muinos-mercedes-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Ruta dos muiños das mercedes
+                                p.article-text As Mercedes é o núcleo tradicional situado máis ao norte do termo municipal de Cualedro. Nel encóntranse dous cursos de auga desiguais, o Regato das Mercedes e o Río de Baldriz. Neste último atopamos un fermoso roteiro perfectamente acondicionado, accesible para todos os públicos, formado por cinco muíños de planta rectangular e unha única moa con cuberta de lousa, unha calidade específica desta parte do concello.
+        include ../templates/_includes/_scripts.pug

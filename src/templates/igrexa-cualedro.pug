@@ -1,0 +1,19 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-cualedro.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Igrexa vella de Cualedro
+                                p.article-text Antiguo templo parroquial construido, probablemente, en el siglo XVII que estuvo en uso hasta mediados del siglo XX. A su vera se sitúa una original fuente y lavadero con pilar central. En mayo del año 1934 una tormenta dejó en la villa <em>"abundante pedrisco que causó grandes perjuicios en las cosechas. En torre de iglesia cayó una chispa, destrozándola".</em> <br>
+                                | Está rodeada parcialmente por un conjunto alineado de casas tradicionales que destacan por su homogeneidad. En una de ellas tuvieron lugar los hechos que narra la leyenda conocida por el nombre de A Mao Negra.
+        include ../templates/_includes/_scripts.pug

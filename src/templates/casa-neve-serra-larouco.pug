@@ -1,0 +1,21 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/casa-da-neve.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/casa-da-neve-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Casa da neve da serra do Larouco
+                                p.article-text As casas da neve ou neveiras son construcións para a obtención de xeo a través da neve recollida durante o inverno para ser consumida durante o verán. A casa da neve que aquí nos ocupa é un pozo de planta ovalada de tres metros de profundidade que foi escavado na rocha do que sae unha canalización duns 10 metros de longo para evacuar o xeo derretido. A neveira, que contou cunha cuberta hoxe desaparecida, pertenceu á Casa de Monterrei durante os séculos XVI e XVII, tal e como proba un escudo nobiliar atopado no seu interior. <br>
+                                | As neveiras foron construídas por mosteiros, cabidos catedralicios, cidades e señores feudais en serras elevadas. Os usos que tiña eran, sobre todo, para a conservación de alimentos, arrefriar bebidas ou comidas, así como para usos medicinais.
+        include ../templates/_includes/_scripts.pug

@@ -1,0 +1,18 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/forno-comunal.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Forno comunal
+                                p.article-text Densamente poboada no pasado grazas á súa condición de alfándega e de vila, A Xironda é unha aldea compacta que conta cun magnífico forno de cocer pan porticado (semellante ao da Saceda) que serve de mostra da magnífica arquitectura popular desta comarca. De planta rectangular e uso comunal, o forno destaca polos contrafortes que reforzan os grosos muros de carga que sosteñen a súa soberbia cuberta granítica.
+        include ../templates/_includes/_scripts.pug

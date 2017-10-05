@@ -1,0 +1,23 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-atas.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/igrexa-atas-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Igrexa de Atas
+                                p.article-text Nos muros dos templos románicos non é infrecuente atopar sexo labrado en pedra. Xunto con imaxes de guerreiros medievais, horóscopos, animais diversos –reais ou fantásticos−, cacerías, labregos, músicos ou bailadores, as escenas sexuais parecen unha estraña iconografía para decorar unha igrexa románica en plena Idade Media. <br>
+                                | Nunha das fachadas laterais de Sta María de Atás podemos ver, entre outras imaxes, un falo erecto de significado impreciso: unha advertencia contra a luxuria?; unha pervivencia do valor profiláctico que tivo o pene outrora?; unha representación do habitual? (as familias durmían naquel tempo nunha única estancia)….<br>
+                                | Durante a Idade Media, Atás estivo baixo a xurisdición de Celanova. Consérvase a extraordinaria casa reitoral, o principal edificio civil de Atás, que foi en tempos un cenobio dependente da casa matriz. Os monxes beneditinos ou bieitos contribuíron ao avance económico e tecnolóxico do traballo do campo, establecendo métodos de explotación colectiva e construíndo infraestruturas de regadío, como o chamado Caño de Chamusiños.<br>
+                                | A Casa Reitoral, S.XVIII-XIX, preséntanos muros de cantaría en seco e planta en escuadra en torno a un patio que se pecha con cerca de sólidos sillares e portalón con cornisa e remates de cruz e pirámides, con vertente a catro augas, fortín en ángulo e escaleiriña exterior de pedra.
+        include ../templates/_includes/_scripts.pug

@@ -1,0 +1,52 @@
+.item-link {
+  color: $brand-primary-color;
+  font-size: 1.2rem;
+    .item {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        position: relative;
+        width: 100%;
+        &.item-1 {
+            background-image: url(../files/img/casa-da-neve.jpg);
+        }
+        &.item-2 {
+            background-image: url(../files/img/castro-saceda.jpg);
+        }
+        &.item-3 {
+            background-image: url(../files/img/igrexa-atas.jpg);
+        }
+        &.item-4 {
+            background-image: url(../files/img/igrexa-baia.jpg);
+        }
+        &.item-5 {
+            background-image: url(../files/img/miliarios-lamas.jpg);
+        }
+        &.item-6 {
+            background-image: url(../files/img/pena-muller.jpg);
+        }
+        &.item-7 {
+            background-image: url(../files/img/peto-animas-xironda.jpg);
+        }
+        &.item-8 {
+            background-image: url(../files/img/muinos-mercedes.jpg);
+        }
+        .item-title {
+            color: #fff;
+            margin-bottom: 0;
+            width: 100%;
+            text-align: center;
+            padding-top: 163px;
+            span {
+                background-color: rgba($brand-primary-color, 0.8);
+                color: #fff;
+                padding: 5px 10px;
+                display: block;
+            }
+        }
+    }
+}
+
+
+

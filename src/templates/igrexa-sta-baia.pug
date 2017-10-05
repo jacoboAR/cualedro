@@ -1,0 +1,23 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-baia.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/igrexa-baia-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Igrexa de Sta. Baia
+                                p.article-text A igrexa parroquial, de estilo barroco, conta con muros de perpiaño e planta rectangular con presbiterio; na fachada dispón unha porta alintelada con molduras no lintel e na parte inferior das xambas; coroa o conxunto unha pequena espadana.  <br>
+                                | No templo destaca tamén un magnífico reloxo de sol, pero sobre todo os restos dunha traza románica anterior, visible nas impostas da porta do camposanto e tamén na torre que acolle o campanario. Aquí chama poderosamente a atención un fragmento reutilizado de tímpano semicircular no que se labrou, en altorrelevo, unha cruz que parece de Malta, situada entre un crecente e unha rosácea. <br>
+                                | Ao pé do templo parroquial, unha magnífica casa reitoral que aínda conserva unha troneira situada á beira do seu portalón de acceso, labrada para disparar armas de fogo desde o interior. A súa construción foi promovida polos xesuítas, tal e como evidencia unha inscrición (“mandó hacer IHS”) labrada nun dos seus muros. Cómpre recordar que os xesuítas rexentaron durante o século XVI o célebre colexio de Monterrei, que se levantou no lugar que hoxe ocupa o Parador de Turismo.
+
+        include ../templates/_includes/_scripts.pug

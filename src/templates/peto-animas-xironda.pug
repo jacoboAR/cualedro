@@ -1,0 +1,21 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/peto-animas-xironda.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/peto-animas-xironda-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Peto das ánimas da Xironda
+                                p.article-text A aldea raiana da Xironda conta con múltiples atractivos. Nas súas proximidades sitúase o castro de a “Cidá de Grou”, un xacemento da Idade de Ferro situado administrativamente en Portugal, pero que ofrece desde a marxe galega o seu mellor punto de observación. <br>
+                                | A Xironda, que estivo baixo o dominio do lonxano Mosteiro de Melón durante a Idade Media, conta ademais cunha elegante igrexa parroquial e un extraordinario peto de ánimas de estilo barroco exquisitamente labrado no ángulo dunha nobre casa levantada entre medianeiras no centro da aldea. Baixo a imaxe da Virxe do Carme, da que colgan varios escapularios, consúmense no lume purificador as ánimas pecadoras de, entre outros, un bispo e o mesmísimo papa, identificados coa mitra e a tiara.
+        include ../templates/_includes/_scripts.pug

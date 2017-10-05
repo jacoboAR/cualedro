@@ -1,0 +1,18 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/xacemento-sta-marta.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Xacemento de Sta. Marta
+                                p.article-text Xacemento complexo que contén restos datables desde a Idade do Bronce (2.000 a.C) ata a época romana (séculos I-V d.C). Localizado 1,5 km ao sueste da aldea de Lucenza (na parroquia do mesmo nome) foi obxecto de escavacións arqueolóxicas por parte de Antonio R. Colmenero que puxeron ao descuberto diversos lenzos de muros de factura romana. Segundo o seu escavador distínguense ata tres niveis de ocupación: un prerromano relacionado co Bronce Final, outro romano do século I d.C. e un romano baixo imperial dos séculos III e IV d.C. Os muros que viron a luz na década de 1970, foron divididos horizontalmente por medio dunha liña continua e quebrada de pezas cerámicas (maiormente fragmentos de tégula) que permiten distinguir os muros orixinais dos recrecido polos restauradores. 
+        include ../templates/_includes/_scripts.pug

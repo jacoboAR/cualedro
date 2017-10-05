@@ -1,0 +1,20 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-baldriz.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Igrexa de Baldriz
+                                p.article-text Templo parroquial de nave única construído no século XVIII que, historicamente, estivo vinculado co Priorado de Atás. A orixe do topónimo está, segundo E. Bascuas, nun nome de orixe xermánica: Vila Balderici. <br>
+                                | A igrexa presenta un presbiterio elevado e muros de cantaría perfectamente labrados e escuadrados. A fachada está rematada en altura por unha espadana de dúas campás flanqueada por pináculos. Está situada no centro do núcleo, á beira da rúa principal. <br>
+                                | A fachada flanqueada por dúas pilastras de sección cadrada rematadas en pináculos moi estilizados, cunha porta baixo lintel e reloxo moderno. A espadana é de dous corpos, o primeiro de dous vans, e o segundo dun único oco. Remata en altura o conxunto unha cruz latina de pedra sobre unha pequena peaña, franqueada por dous pinchos. O altar ten unha fiestra rectangular que lle dá luz á traseira.
+        include ../templates/_includes/_scripts.pug

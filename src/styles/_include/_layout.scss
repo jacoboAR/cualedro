@@ -1,0 +1,94 @@
+
+#info, #map {
+    height: 100%;
+}
+
+
+.Main {
+    height: 100%;
+    display: flex;
+}
+
+
+
+.MapHandler {
+    margin-right: auto;
+    font-family: 'FontAwesome';
+}
+
+
+.Map-container {
+    height: 100%;
+}
+
+#map {
+    order: 1;
+}
+
+#map.Map-container--min {
+    width: 0;
+}
+
+#map.Map-container--max {
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+
+#content {
+    height: 100%;
+    transition: all .2s ease-in-out;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#content.Content-container--max {
+    width: 100%;
+}
+
+#content.Content-container--min {
+    width: 0;
+}
+
+@media screen and (min-width: 767px) {
+
+    .Header {
+        position: relative;
+        width: 100%;
+    }
+
+    .MapHandler, .Logo {
+        display: none;
+    }
+
+
+    #content.Content-container--max, #map.Map-container--min {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Header-index {
+        background-color: rgba(215,25,32,1);
+        .MapHandler i, .Menu-link i, .Menu-link-lang {
+            font-size: 1.3rem;
+            color: #fff;
+            &:hover,
+            &:focus {
+                color: #fff;
+            }
+        }
+    }
+    
+}
+
+
+
+
+.Menu {
+    display: flex;
+    .Menu-link {
+        margin-top: 5px;
+    }
+}

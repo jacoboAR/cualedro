@@ -1,0 +1,12 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/font-awesome/css/font-awesome";
+@import "./_include/all";
+
+
+html, body {
+    height: 100%;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}

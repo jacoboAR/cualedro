@@ -1,0 +1,21 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/castro-san-millao.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Castro de San Millao
+                                p.article-text O xacemento, que os nativos denominan cidá, destaca polas súas impoñentes defensas en forma de murallas que o arrodean por completo. <br>
+                                | Esta aldea fortificada, datable entre os séculos I a.C e II d.C., consta dun recinto principal e dous secundarios –situados nos sectores leste e oeste– que aparecen delimitados por unha grosa muralla de pedra de aparello maiormente poligonal. Os seus monumentais muros recordan aos doutros castros próximos tan monumentais da bisbarra, caso da Cidá da Saceda (na parroquia de Lucenza) ou o Muro do Búbal (Espiño; Oímbra). <br>
+                                | O elemento defensivo máis singular do castro é o campo de pedras fincadas verticalmente (hoxe parcialmente caídas) que se localizan nos sectores nordeste e leste. Este sistema defensivo, documentado en moi poucos castros galegos, tiña por obxecto combater os ataques da “infantería” e da “cabalería” de forma eficaz.
+
+        include ../templates/_includes/_scripts.pug

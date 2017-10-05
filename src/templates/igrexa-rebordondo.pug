@@ -1,0 +1,14 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Igrexa de Rebordondo
+                                p.article-text Igrexa rural de nave única, presbiterio e sancristía, de planta sensiblemente rectangular e cuberta de tella cerámica a dúas augas sobre muros de cantaría. A fachada está coroada por unha espadana de escasa altura para dúas campás. Atópanse elementos decorativos propios do barroco compostelán, aínda que empregados sen moita profusión. A data máis segura de construción é o s. XVII, aínda que probablemente sobre unha base románica preexistente. Está situada na parte alta da aldea, nunha posición elevada e dominante sobre o Val dos Regos.
+        include ../templates/_includes/_scripts.pug

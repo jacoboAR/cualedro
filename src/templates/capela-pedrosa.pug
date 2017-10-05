@@ -1,0 +1,14 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Capela da Pedrosa
+                                p.article-text Dedicado a San Ciríaco, estamos diante dun pequeno templo dunha soa nave. No seu interior garda unha ara romana que, segundo Rodríguez Colmenero, loce unha <em>“inscrición medio borrada que fai de pía de auga bendita. É un dos monumentos máis antigos e representativos do lugar. O deus alí venerado chamábase Ralmueno ou Palmueno e a dedicatoria do altar faríalla devotamente un tal Melvio Flavino, o primeiro habitante de nome coñecido da Pedrosa, que viviu hai uns 1800 anos.”</em>
+        include ../templates/_includes/_scripts.pug

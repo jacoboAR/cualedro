@@ -1,0 +1,21 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/hermida-saude.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Hermida da saúde
+                                p.article-text Conjunto formado por la ermita de A Nosa Señora da Saúde, un crucero figurado con altar, un manantial y el atrio alrededor, cerrado por un muro pétreo de escasa altura, y con un uso lúdico y festivo. <br>
+                                | La ermita, quizás impulsada por los monjes de Atás, parece datar del s. XVIII. Tiene una nave de planta rectangular y cubierta a dos aguas sobre muros de sillería. <br>
+                                | La fachada está protegida por un pórtico de madera que se apoya sobre columnas de granito desiguales de sección circular. <br>
+                                | El manantial es una capillita de muretes de mampostería cubierta con una loseta de piedra. El crucero consta de base en forma de zigurat, fuste, capitel y cruz latino, con una pequeña ara en la parte que da a la ermita.
+        include ../templates/_includes/_scripts.pug

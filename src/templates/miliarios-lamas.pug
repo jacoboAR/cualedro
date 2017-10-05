@@ -1,0 +1,22 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/miliarios.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/miliarios-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Miliarios de lamas
+                                p.article-text Trátase de dous miliarios anepígrafes –sen información gravada– que formaron parte da vía romana secundaria que unía a gran cidade romana de Chaves (Portugal) con Xinzo da Limia. Esta vía de comunicación seguía un percorrido semellante ao da actual autovía A-52, e puido ser un tramo dunha vía romana de longa distancia que uniría Aquae Flaviae (Chaves) con Iria Flavia (Padrón), cruzando os vales do Támega, Búbal, a chaira da Limia, val do Arnoia e cunca do Miño. <br>
+                                | Estes dous exemplares apareceron durante as obras de construción desta infraestrutura, alá polos anos noventa do s.XX, a uns 150 m de onde hoxe están colocados. <br>
+                                | Os miliarios eran marcos de sección cilíndrica que sinalaban as distancias en millas nas vías de comunicación (algunhas delas calzadas ou empedradas) construídas durante a dominación romana (s. I-IV d.C).
+        include ../templates/_includes/_scripts.pug

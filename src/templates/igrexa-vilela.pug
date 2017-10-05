@@ -1,0 +1,16 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Igrexa de Vilela
+                                p.article-text Pequeno templo de planta rectangular, completado con presbiterio e sancristía. Orixinalmente de traza románica, como evidencia a porta principal, foi reconstruída segundo o gusto barroco popular; destaca o seu reloxo de sol e a sólida espadana dun único van. <br>
+                                | Cómpre ver a pía de auga bendita situada no interior do templo, <em>“decorada con bandas semihelicoidais na superficie exterior e apoiada nunha doela da arquería románica da porta principal do antigo templo”</em>, en palabras de Rodríguez Colmenero. <br>
+                                | O Couto de Vilela (diminutivo da voz latina villa) segundo R. Colmenero, dependía do Mosteiro de Celanova.
+        include ../templates/_includes/_scripts.pug

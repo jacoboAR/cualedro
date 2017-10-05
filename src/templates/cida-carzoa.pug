@@ -1,0 +1,15 @@
+doctype html
+html(lang="gl")
+    include ../templates/_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../templates/_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Cidá de Carzoa
+                                p.article-text O castro atópase emprazado no cumio dun outeiro rochoso a unha cota de altitude de 904 m. Presenta planta ovalada defendido por condicións naturais favorables e murallas que configuran as distintas terrazas habitacionais. Na croa aprécianse varios orificios circulares para o apoio de postes. A veciñanza asegura que hai un túnel entre este castro e a igrexa de Flariz.<br>
+                                | Segundo algúns estudosos, o topónimo Carzoá pode proceder do zootopónimo Corzoá, que á súa vez procede de corzo. En 1777 González de Ulloa describe Carzoá, cando aínda era anexo de Santa Baia de Montes, do seguinte xeito: <em>“Es aneja a esta parroquia la iglesia con Sacramento sita en el lugar de Carzoá, a media legua distante a poniente. Su situación es más áspera que la de Santa Baya. Los parroquianos no son de los más cerriles. En todo el término de estos lugares hay mucha copia de conejos y perdices, y además de notable ni distinguido”.</em>
+        include ../templates/_includes/_scripts.pug
