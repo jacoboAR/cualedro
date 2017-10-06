@@ -1,0 +1,14 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Chapel of A Pedrosa
+                                p.article-text Dedicated to St Cyriacus, we are in front of a small temple with a single nave. In its interior it guards a Roman altar that, according to Rodríguez Colmenero, bears a <em>"half erased inscription and it functions as a pious of holy water. It is one of the oldest and most representative monuments of the place. The revered god there was called Ralmueno or Palmueno and the dedication of the altar would be devoutly made by one such Melvio Flavino, the first inhabitant of the name known to Pedrosa, who lived about 1800 years ago”.</em>
+        include ../_includes/_scripts.pug

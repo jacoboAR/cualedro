@@ -1,0 +1,35 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                
+                .row.ml-0.mr-2
+                    .col-sm-6.p-0
+                        a.item-link(href="./casa-neve-serra-larouco.html"): .item.item-1
+                                p.item-title: span Casa da neve da serra do Larouco
+                    .col-sm-6.p-0
+                        a.item-link(href="./castro-saceda.html"): .item.item-2
+                                p.item-title: span Castro Saceda
+                    .col-sm-6.p-0
+                        a.item-link(href="./igrexa-atas.html"): .item.item-3
+                                p.item-title: span Igrexa de Atas
+                    .col-sm-6.p-0
+                        a.item-link(href="./igrexa-sta-baia.html"): .item.item-4
+                                p.item-title: span Igrexa de Sta. Baia
+                    .col-sm-6.p-0
+                        a.item-link(href="./miliarios-lamas.html"): .item.item-5
+                                p.item-title: span Miliarios de Lamas
+                    .col-sm-6.p-0
+                        a.item-link(href="./pena-muller.html"): .item.item-6
+                                p.item-title: span Pena muller
+                    .col-sm-6.p-0
+                        a.item-link(href="./peto-animas-xironda.html"): .item.item-7
+                                p.item-title: span Peto das ánimas da Xironda
+                    .col-sm-6.p-0
+                        a.item-link(href="./ruta-muinos-mercedes.html"): .item.item-8
+                                p.item-title: span Ruta dos muiños das mercedes
+        include ../_includes/_scripts.pug

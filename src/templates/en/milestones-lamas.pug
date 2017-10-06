@@ -1,0 +1,22 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/miliarios.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/miliarios-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title The milestones of Lamas 
+                                p.article-text This concerns two milestones without epigraphy - without engraved information - which form part of the secondary roman road that connects the great roman city of Chaves (Portugal) with Xinzo da Limia. This route of communication followed a path similar to the current A-52 dual carriageway, and could have been a stage of a long distance roman road that connected Aquae Flaviae (Chaves) with Iria Flavia (Padrón), crossing the valleys of the Támega, Búbal, the plain of A Limia, the valley of Arnoia and the area of the Miño. <br>
+                                | Those two examples were uncovered during the construction works of this infrastructure in the 1990s, some 150 m from where today they are displayed. <br>
+                                | The milestones were cylindrical markers that showed the distances in miles along the communication paths (some of which were paved or cobbled) constructed during the roman occupation (I-IV century A.D).
+        include ../_includes/_scripts.pug

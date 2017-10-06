@@ -1,0 +1,18 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/xacemento-sta-marta.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Yacimiento de Sta. Marta
+                                p.article-text Yacimiento complejo que contiene restos datables desde la Edad del Bronce (2.000 la.C) hasta la época romana (siglos I-V d.C). Localizado 1,5 km al sureste de la aldea de Lucenza (en la parroquia del mismo nombre) fue objeto de excavaciones arqueológicas por parte de Antonio R. Colmenero que pusieron a cielo abierto diversos lienzos de muros de factura romana. Segundo su excavador se distinguen hasta tres niveles de ocupación: uno prerromano relacionado con el Bronce Final, otro romano del siglo I d.C. y un romano bajo imperial de los siglos III e IV d.C. Los muros que vieron la luz en la década de 1970, fueron divididos horizontalmente por medio de una línea continua y quebrada de piezas cerámicas (mayormente fragmentos de tégula) que permiten distinguir los muros originales de los recrecidos por los restauradores.
+        include ../_includes/_scripts.pug

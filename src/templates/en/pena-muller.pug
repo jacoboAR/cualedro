@@ -1,0 +1,23 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/pena-muller.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/pena-muller-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Pena muller
+                                p.article-text The Serra do Larouco (1.538 msnm) is, without doubt, the most extraordinary natural monument in the region of de Cualedro. A natural dividing border between the regions of Monterrei and A Limia, O Larouco is a mountain range common to Galicia and Portugal that possess an exceptional landscape, natural and cultural values. <br>
+                                | If we start the ascent from the village of Lucenza, one of its natural corridors, you will find the area of land where the Ice Well is situated and just after this, a series of monumental granite structures that have been shaped by the elements. Wind, sun, snow and rain have managed to reshape the horizon with a series of natural batholiths with whimsical shapes, some of which have a figurative aspect: a dromedary, a rooster, a dog and some say even a wolf. <br>
+                                | But between all of those, there is one that stands out and it is called Pena Muller, a natural granite outcrop of notable height with a profile that gives the impression of the silhouette of a woman – a piece of abstract in reality – that was carved out over time by the contingent chiselling of the elements. <br>
+                                | In the decade of the 1980s the Festa do Larouco, was celebrated at the foot of the Pena Muller and was promoted by a group of enthusiasts from both sides of the “raia”. Always initiated with the sound of the bagpipe, the acts included a symbolic offering to the God Larouco, with the words of Rodríguez Colmenero, “principal recipient that was of the religious and cult faiths of the surrounding areas on the arrival on Christianity”.
+        include ../_includes/_scripts.pug

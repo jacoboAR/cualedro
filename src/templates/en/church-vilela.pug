@@ -1,0 +1,16 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Church of Vilela
+                                p.article-text Small temple with a rectangular shaped floor plan, complete with presbytery and sacristy. Originally of Romanesque design, as evidenced by the main gate, it was rebuilt according to the popular baroque taste. It stands out for its sundial and belfry with a single opening.<br>
+                                | You must see the devout blessed water fountain inside the temple, "decorated with semi spiral rails on the outer surface and supported on a keystone of the Romanesque archery of the main door of the old temple", in the words of Rodríguez Colmenero.<br>
+                                | The Couto of Vilela (diminutive of the Latin voice for village) according to R. Colmenero, depended on the Monastery of Celanova.
+        include ../_includes/_scripts.pug

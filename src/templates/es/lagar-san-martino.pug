@@ -1,0 +1,18 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/lagar-san-martino.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Lagar rupestre de San Martiño
+                                p.article-text Lagar rupestre de la modalidad de pisado localizado en un paraje conocido como A Portela, descubierto por Eduardo Castro. Aparece excavado sobre un afloramiento granítico natural que sobresale del suelo poco más de 1 m en el punto más desfavorable. El lagar, que pertenece a la tipología de pisado, presenta un calcatorium o estanque principal en el que se perciben los negativos de unas espaldeiras hoy desaparecidas. El espacio de pisado cuenta con un conducto que permitía decantar el mosto en un pío o lacus de forma semicircular imperfecta.
+        include ../_includes/_scripts.pug

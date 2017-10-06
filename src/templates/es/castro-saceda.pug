@@ -1,0 +1,20 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/castro-saceda.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/castro-saceda-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Castro de A Saceda
+                                p.article-text Es uno de los castros mejor conservados de Galicia y también uno de los pocos declarados Bien de Interés Cultural (el mayor grado de protección que permite la ley) en la provincia de Ourense. El Castro da Saceda, situado frente a la aldea del mismo nombre se levanta en el medio de una llanura, en una elevación que permite un gran control visual sobre el entorno. Se trata de una aldea fortificada que presenta leves influencias del mundo romano debidas a los contactos comerciales, pero no a una influencia romanizadora directa. El castro se localiza sobre un otero a 800 metros de altitud, al sur de la Serra do Larouco, en las penillanuras entre la sierra y la depresión de Verín, en la cuenca del río Támega. A lo largo de la historia esta comarca fue una zona estratégicamente situada en un lugar central del convento bracarense de la Gallaecia romana, con capital en Braga, delimitado sobre un área geográfica que tenía ya anteriormente peculiaridades culturales propias, fruto de una tradición que venía ya de la Edad del Bronce o de la primera Edad del Hierro. Este yacimiento tiene gran valor monumental por las estructuras y reúne características similares a los de la comarca, además de ser aquel que proporcionó una cronología más antigua de entre las estudiadas hasta ahora en la zona. Su ocupación abarca desde el s. IV a.C. hasta el I d.C, momento en el que fue abandonado por su población, que se trasladaría al castro vecino de A Cidá de San Millao por razones que aún ignoramos.
+        include ../_includes/_scripts.pug

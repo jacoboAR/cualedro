@@ -1,0 +1,20 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-baldriz.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Iglesia de San Bartolomeu de Baldriz
+                                p.article-text Templo parroquial de nave única construido en el siglo XVIII que, históricamente, estuvo vinculado con el Priorato de Atás. El origen del topónimo está, según E. Bascuas, en un nombre de origen germánica: Vila Balderici. <br>
+                                | La iglesia presenta un presbiterio elevado y muros de sillería perfectamente labrados y escuadrados. La fachada está finalizada en altura por una espadaña de dos campanas flanqueada por pináculos. Está situada en el centro del núcleo, al lado de la calle principal. <br>
+                                | La fachada flanqueada por dos pilastras de sección cuadrada finalizadas en pináculos muy estilizados, con una puerta bajo dintel y reloj moderno. La espadaña es de dos cuerpos, el primero de dos vanos, y el segundo de un único hueco. Finaliza en altura el conjunto una cruz latina de piedra sobre una pequeña peana, flanqueada por dos pináculos. El altar tiene una ventana rectangular que le da luz a la trasera.
+        include ../_includes/_scripts.pug

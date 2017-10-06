@@ -1,0 +1,22 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-atas.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/igrexa-atas-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Iglesia y rectoral de Atás
+                                p.article-text En los muros de los templos románicos no es infrecuente encontrar sexo labrado en piedra. Junto con imágenes de guerreros medievales, horóscopos, animales diversos –reales o fantásticos−, cacerías, labriegos, músicos o bailadores, las escenas sexuales parecen una extraña iconografía para decorar una iglesia románica en plena Edad Media.  <br>
+                                | En una de las fachadas laterales de Sta María de Atás podemos ver, entre otras imágenes, un falo erecto de significado impreciso: una advertencia contra la lujuria?; una pervivencia del valor profiláctico que tuvo el pene entonces?; una representación de lo habitual? (las familias dormían en aquel tiempo en una única estancia)… <br>
+                                | Durante la Edad Media, Atás estuvo bajo la jurisdicción de Celanova. Se conserva la extraordinaria casa rectoral, el principal edificio civil de Atás, que fue en tiempos un cenobio dependiente de la casa matriz. Los monjes benedictinos contribuyeron al avance económico y tecnológico del trabajo en el campo, estableciendo métodos de explotación colectiva y construyendo infraestructuras de regadío, como el llamado Caño de Chamusiños.
+        include ../_includes/_scripts.pug

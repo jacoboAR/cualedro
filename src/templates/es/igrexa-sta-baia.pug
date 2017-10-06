@@ -1,0 +1,22 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-baia.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/igrexa-baia-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Iglesia de Sta. Baia
+                                p.article-text La iglesia parroquial, de estilo barroco, cuenta con muros de sillería y planta rectangular con presbiterio; en la fachada dispone una puerta adintelada con molduras en el lintel y en la parte inferior de las jambas; corona el conjunto una pequeña espadaña. 
+                                | En el templo destaca también un magnífico reloj de sol, pero sobre todo los restos de una traza románica anterior, visible en las impostas de la puerta del cementerio y también en la torre que acoge el campanario. Aquí llama poderosamente la atención un fragmento reutilizado de tímpano semicircular en el que se labró, en altorrelieve, una cruz que parece de Malta, situada entre un crecente y una rosácea. 
+                                | Al pie del templo parroquial, una magnífica casa rectoral que aún conserva una tronera situada al lado de su portalón de acceso, labrada para disparar armas de fuego desde el interior. Su construcción fue promovida por los jesuitas, tal y como evidencia una inscripción (“mandó hacer IHS”) labrada en uno de sus muros. Los jesuitas regentaron durante el siglo XVI el célebre colegio de Monterrei, que se levantó en el lugar que hoy ocupa el Parador de Turismo.
+        include ../_includes/_scripts.pug

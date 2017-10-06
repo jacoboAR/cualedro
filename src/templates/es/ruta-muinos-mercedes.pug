@@ -1,0 +1,20 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/muinos-mercedes.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/muinos-mercedes-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Ruta de los molinos de As Mercedes
+                                p.article-text As Mercedes es el núcleo tradicional situado más al norte del término municipal de Cualedro. En el se localizan dos cursos de agua desiguales, el Regato das Mercedes y el Río de Baldriz. En este último encontramos una hermosa ruta perfectamente acondicionada, accesible para todos los públicos, formada por cinco molinos de planta rectangular y una única muela con cubierta de pizarra, una cualidad específica de esta parte del concello.
+        include ../_includes/_scripts.pug

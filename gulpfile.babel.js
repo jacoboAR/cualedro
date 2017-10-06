@@ -35,7 +35,7 @@ const routes = {
 	},
 
 	templates: {
-		pug: `${baseDirs.src}templates/*.pug`,
+		pug: `${baseDirs.src}templates/**/*.pug`,
 		_pug: `${baseDirs.src}templates/_includes/*.pug`
 	},
 

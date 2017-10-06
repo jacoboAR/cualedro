@@ -1,0 +1,20 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/castro-san-millao.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Hill fort of San Millao
+                                p.article-text The fortified settlement, called cidá by the natives, stands out for its imposing defences in the form of walls that surround the whole site. This fortified village, dating from the 1st century B.C to the II century A.D, consists of a main site and two secondary enclosures- situated on the east and west section that are outlined by a thick dry stone wall principally polygonal.<br>
+                                | Its monumental walls remind us of other nearby monumental fortifications such as in Cidá da Saceda or the Búbal Wall (Espiño; Oímbra).<br>
+                                | The most singular element of defence of this fortified settlement is the field of vertical driven in stones (today partially fallen) that are found in the northeast and eastern sections. This system of defence, documented in very few Galician settlements, was designed to effectively fight off the attacks of the “infantry” and of the “cavalry”.
+        include ../_includes/_scripts.pug

@@ -1,0 +1,18 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/lagar-san-martino.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Wine press of San Martiño
+                                p.article-text A wine press of the foot trampling type located in an area known as A Portela, discovered by Eduardo Castro. It was excavated on a natural granite outcrop, rising slightly out of the ground and to a depth of just over 1m. The wine press that belongs to the stepping kind displays a calcatorium or main basin that used to house espaliers that are currently no longer in place. The space used for trampling the grapes has a duct that used to allow the grape juice to decant in to an imperfect semicircular shaped pit.
+        include ../_includes/_scripts.pug

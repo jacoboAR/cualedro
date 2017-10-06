@@ -1,0 +1,16 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Igrexa de A Moimenta
+                                p.article-text Templo levantado en estilo barroco popular que presenta nave y presbiterio más elevado. Fachada austera coronada por una sólida espadaña finalizada en pináculos y cruz sobre salte. Según Rodríguez Colmenero “el cornisamento se halla coronado por pináculos de excelente factura. Más que de un conjunto monumental, que no lo es, dadas las dimensiones, se trata de una obra bien hecha”. <br>
+                                | En la cara externa del muro norte leemos esta inscripción: SI CERRO ÉL ATRIO Y EDIFICO LANA MURALLA SIENDO CURA DE ESTA Sta. YGLESIA D. RAMÓN M. GAITO. 1892. <br>
+                                | El nombre de esta aldea (lat. Monumentum; «recuerdo», «erección conmemorativa», «ofrenda votiva») procede de la necrópolis medieval rupestre que se localiza en sus cercanías.
+        include ../_includes/_scripts.pug

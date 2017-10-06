@@ -1,0 +1,22 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-atas.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/igrexa-atas-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Church and rectory house of Atás
+                                p.article-text On roman temple walls it’s not uncommon to find sexual depictions etched into the stone. Together with images of medieval warriors, horoscopes, different types of animals - real or fantasy, hunting scenes, farmers, musicians or dancers, the sexual scenes seem to be a strange iconography to use for de    corating a roman church in the middle ages.<br>
+                                | On one of the lateral facades of Saint Mary of Atás we can see, among other images, an erect penis of imprecise meaning: a warning against lust?; A survival of prophylactic value that the penis possessed?; a representation of the normal? (i  n that period families used to sleep in a single room)…<br>
+                                | During the middle ages, Atás was under the jurisdiction of Celanova. It has conserved the extraordinary rectory house, the main civil building of Atás that used to be an independent monastery from the central house. The Benedictine monks contributed to the economic and technological advances of work in the countryside, establishing methods of collective exploitation of irrigation infrastructures, such as that of Caño de Chamusiños.
+        include ../_includes/_scripts.pug

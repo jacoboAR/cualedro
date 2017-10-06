@@ -1,0 +1,20 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-baldriz.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Church of Saint Bartholomew of Baldriz
+                                p.article-text A parish church with a single nave that was built in the 18th century, which was historically linked to the Priory of Atas. The origin of the place name is, according to E. Bascuas, of Germanic origin: Vila Balderici.<br>
+                                | The church has a raised presbytery and perfectly carved squared masonry walls. The facade is finished in height by a bell tower that has two bells and is flanked by finials. It is situated in the town centre, next to the main street.<br>
+                                | The façade that is flanked by two square section pilasters is completed with very slender pinnacles, with a door that sits under a lintel and a modern clock. The bell-gable is made up of two parts, the first of has two openings, and the second is of a single opening. It is finished in height by a Latin cross of stone on a small pedestal, flanked by two finials. The altar has a rectangular window that gives light to the back.
+        include ../_includes/_scripts.pug

@@ -1,0 +1,19 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/madorrino.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title O Madorriño
+                                p.article-text La <em>medorra</em> es un monumento funerario aislado situado en una amplia llanura, haciendo también las veces de línea divisoria entre Lucenza y A Saceda, justo al lado de la carretera que comunica este último núcleo con el de A Madanela (ayuntamiento de Monterrei), lo que evidencia que fue utilizado como hito divisorio y visual desde hace muchos siglos. El túmulo, tal y como señala Rodríguez Colmenero, el primero en estudiarlo, tiene forma de un cono truncado, una altura de 1,5 m y un diámetro de 15 metros. <br>
+                                | Presenta señales claras de haber sido espoliada, ya que perdió su losa superior o mesa y, en su lugar, es visible ahora un hoyo parcialmente cegado en el que emergen las cabezas de tres de los chantos u ortostatos que forman parte de la cámara granítica que, en origen, sirvieron para sustentar una piedra de cobertura.
+        include ../_includes/_scripts.pug

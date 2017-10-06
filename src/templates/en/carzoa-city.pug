@@ -1,0 +1,15 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title The City of Carzoá
+                                p.article-text The fort is located on the top of a rocky hill at an altitude of 904 m. It consists of an oval plan floor defended by favourable natural conditions and walls that make up the different residential settlements. In the central area there are several circular holes to support poles. The local neighbourhood assures that there is a tunnel between this fort and the church of Flariz. <br>
+                                | According to some scholars, the place name Carazo could originate from the toponymy language of animal origin Corzoá, which in turn comes from roe deer (corzo). In 1777 González de Ulloa described Corzoá, when it was still an annex of Santa Baia de Montes, as follows: <em>"The church with Sacramento is situated in the place of Carzoá, half a league distant to the west. Its location is rougher than that of Santa Baya. The parishioners are not the most obstinate. Throughout these places there is record of rabbits and partridges, as well as significant nor distinguished".</em>
+        include ../_includes/_scripts.pug

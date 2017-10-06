@@ -1,0 +1,14 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Capilla de A Pedrosa
+                                p.article-text Dedicado a Sano Ciríaco, estamos delante de un pequeño templo de una sola nave. En su interior guardia una ara romana que, según Rodríguez Colmenero, luce una <em> “inscripción medio borrada que hace de pía de agua bendito. ES uno de los monumentos más antiguos y representativos del lugar. El dios allí venerado se llamaba Ralmueno o Palmueno y la dedicatoria del altar se la haría devotamente uno tal Melvio Flavino, el primero habitante de nombre conocido de la Pedrosa, que vivió hay unos 1800 años.”</em>
+        include ../_includes/_scripts.pug

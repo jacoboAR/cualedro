@@ -1,0 +1,20 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/trugan.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Lagar de O Trugán
+                                p.article-text La comarca de la D.O. Monterrei posee, hasta el momento, el mayor número de lagares rupestres de toda Galicia, a mucha distancia de cualquiera otra comarca vitivinícola. <br>
+                                | Los lagares aparecer mayoritariamente de forma unitaria -por ejemplo el de O Trugán-, aunque existen algunos conjuntos espectaculares de dos e incluso tres ejemplares, como acontece en el paraje de A Baira (también en San Millao). <br>
+                                | El de O Trugán es el único lagar rupestre inacabado de la comarca. Fue excavado sobre un gran afloramiento granítico de forma irregular que emerge del suelo 1 m aproximadamente. El lagar se sitúa en un contexto de varios batólitos, de ahí que las distintas partes que lo conforman busquen adaptarse a la morfología natural del afloramiento. El calcatorium o estanque principal aparece sin perforar, de forma que no existe ningún tipo de conducto que permita decantar el mosto en el pío o lacus, evidencia de que nunca fue finalizado.
+        include ../_includes/_scripts.pug

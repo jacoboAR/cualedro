@@ -1,0 +1,18 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-cualedro.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Iglesia vieja de Cualedro
+                                p.article-text Antigo templo parroquial construído, probablemente, no século XVII que estivo en uso ata mediados do século XX. Á súa beira sitúase unha orixinal fonte e lavadoiro con piar central. En maio do ano 1934 unha tormenta deixou na vila <em>"abundante pedrisco que causó grandes perjuicios en las cosechas. En la torre de la iglesia cayó una chispa, destrozándola".</em>
+        include ../_includes/_scripts.pug

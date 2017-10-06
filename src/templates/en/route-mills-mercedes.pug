@@ -1,0 +1,20 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/muinos-mercedes.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/muinos-mercedes-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Route of the water mills of As Mercedes 
+                                p.article-text The As Mercedes is the traditional centre, situated more to the north of the municipality of Cualedro. Here can be found two unequal water streams, the pool of Mercedes and the river of Baldriz. In the latter, we can find a beautiful route perfectly set up, accessible for everyone, made up of five rectangular mills and with a unique millstone with a slate roof, a specific gem from this part of the region.
+        include ../_includes/_scripts.pug

@@ -1,0 +1,18 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/xacemento-sta-marta.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Roman site of Saint Martha
+                                p.article-text Site complex that contains the dateable remains from the Bronze age (2.000 BC) to the roman period (I-V AD). Located 1,5 km to the south east of the village of Lucenza (in the parish of its namesake) it was the object of archaeological excavations carried out by Antonio R. Colmenero that uncovered diverse curtain walls of roman workmanship. According to his excavator up to three levels of occupation can be distinguished: One pre-roman relating to the end of the Bronze Age, another roman from the I. century AD and an imperial roman from the III and IV centuries AD. The walls that were discovered in the 1970s were divided horizontally by means of a continual and broken line of ceramic pieces (mostly fragments of tile) that make it possible to distinguish the original walls from those revealed by the restorers.
+        include ../_includes/_scripts.pug

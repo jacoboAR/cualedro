@@ -1,0 +1,16 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Iglesia de Pena Verde
+                                p.article-text Templo parroquial levantado en el siglo XVIII o a principios del s. XIX que luce una espadaña de doble hueco y un único cuerpo. Destaca por su localización, en medio de una manzana y rodeada de casas. Su interior carece de retablos e imaginería digna de mención, excepto una imagen del santo titular.<br>
+                                | Ocupa una posición central dentro de la aldea, sobre un atrio elevado que la sitúa en una posición privilegiada sobre la vega y el barrio que está enfrente. A 150 m al E del templo pasa el Camino de Santiago.<br>
+                                | Según R. Colmenero el Couto de San Pedro de Pena Verde, una aldea humilde desde el punto de vista material, perteneció a la Encomenda de Quiroga, de la orden de San Juan.
+        include ../_includes/_scripts.pug

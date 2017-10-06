@@ -1,0 +1,21 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/casa-da-neve.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/casa-da-neve-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title ‘Casa da neve’ de la Serra do Larouco
+                                p.article-text Las “casas da neve” o neveras son construcciones para la obtención de hielo a través de la nieve recogida durante el invierno para ser consumida durante el verano. La “casa da neve” que aquí nos ocupa es un pozo de planta ovalada de tres metros de profundidad que fue excavado en la roca del que sale una canalización de unos 10 metros de largo para evacuar el hielo derretido. La “neveira”, que contó con una cubierta hoy desaparecida, perteneció a la Casa de Monterrei durante los siglos XVI y XVII, tal y como prueba un escudo nobiliar encontrado en su interior.  <br>
+                                | Las “neveiras” fueron construidas por monasterios, cabildos catedralicios, ciudades y señores feudales en sierras elevadas. Los usos que tenía eran, sobre todo, para la conservación de alimentos, enfriar bebidas o comidas, así como para usos medicinales.
+        include ../_includes/_scripts.pug

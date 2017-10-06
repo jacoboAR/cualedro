@@ -1,0 +1,16 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Church of Pena Verde
+                                p.article-text Parochial temple erected in the XVIII century or the beginning of the XIX century that displays a belfry with double openings and a single frame. It stands out for its location, in the middle of an estate and surrounded by houses. Its interior lacks altarpieces and imagery worthy of a mention, except for an image of the patron saint.<br>
+                                | It occupies a central position within the village, on a raised atrium that is placed in a privileged position overlooking the meadow and the facing the neighbourhood. 150 m to the East of the temple passes the Way of St James.<br>
+                                | According to R. Colmenero the Couto of St Peter of Pena Verde, a humble village from a material point of view, belonged to the Encomenda de Quiroga, by the order of St John.
+        include ../_includes/_scripts.pug

@@ -1,0 +1,22 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/castro-saceda.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/castro-saceda-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Hill fort of A Saceda
+                                p.article-text It is one of Galicia’s best conserved settlements and also one of the few to have been declared of cultural interest (the highest level of protection by law) in the province of Ourense. The settlement of Saceda, situated in front of its namesake village, was built in the middle of the plain, on an elevation that permits a great visual control of the area. It consists of a fortified village that presents slight influences on the roman world due to the commercial contacts, but not to direct roman influence. The settlement is located on top of a hillock at an altitude of 800 metres, to the south of the Serra do Larouco, in the peneplains between the hollow of Verín, in the area of the River Támega. <br>
+                                | Throughout history this region was a strategic area situated in a central place of the Bracarense convent of the roman Gallaecia (Roman name for Galicia) with its capital in Braga, delimited over a geographic area that previously already had its own cultural peculiarities, product of a tradition that came from the Bronze Age o the first Iron Age. This site has a great monumental value for the structures and gathering characteristics similar to those of the region, besides being the one that provides the oldest chronology between those studied in the area until now.<br>
+                                | Its occupation spans from the IV century B.C to the 1st century A.D, the moment in that it was abandoned by its inhabitants who moved to the neighbouring settlement of A Cidá de San Millao for reasons that are still ignored. 
+        include ../_includes/_scripts.pug

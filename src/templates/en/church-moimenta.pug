@@ -1,0 +1,16 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Church of A Moimenta
+                                p.article-text Temple erected in the popular baroque style with an elevated nave and presbytery. An austere facade crowned by a solid steeple and finished with finials and a protruding cross. According to Rodríguez Colmenero "the cornicing is crowned by finials of excellent execution. More than a monumental site, which it is not, given the dimensions, it is a well-made work of art”. <br>
+                                | On the external face of the north wall is the inscription: THE ATRIUM WAS CLOSED AND THE WALL WAS BUILT BEING PRIEST OF THIS ST. CHURCH D.RAMON M.GAITO.1892. <br>
+                                | The name of this village (lat. Monumentum; «memorial», «commemorative building», «ofrenda votiva») comes from the medieval necropolis cave painting located in the surrounding area. 
+        include ../_includes/_scripts.pug

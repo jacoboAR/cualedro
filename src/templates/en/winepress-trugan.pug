@@ -1,0 +1,18 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/trugan.jpg", alt="1")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Winepress of O Trugán
+                                p.article-text The region of D.O. Monterrei possesses, until now, the largest number of winepresses in all of Galicia, far from that of any other winemaking area. The winepresses seem to be mostly of a universal shape – for example that of O Trugán–, but there also exist some spectacular sets that include two or even three examples, as in the case of the winepresses of A Baira (also in San Millao). The one of O Trugán is the only incomplete example in the region. It was excavated on a granite outcrop, taking an irregular shape that emerges approximately 1 m from the ground. The winepress is situated in a setting of batholiths, from where different parts that go together look to adapt to the natural morphology of the outcrop, The calcatorium or main basin appears to be not perforated; this indicates that it has no way off permitting the grape juice to pour in to the distribution point, and this is evidence that it was not finished.
+        include ../_includes/_scripts.pug

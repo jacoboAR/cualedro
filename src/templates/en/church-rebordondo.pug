@@ -1,0 +1,15 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Church of Rebordondo
+                                p.article-text Rural single nave church, consisting of a presbytery and a sacristy with a simple rectangular floor covered with a tiled gabled roof on masonry walls. The facade is crowned by a low steeple that houses two bells. It displays decorative elements typical of the baroque Compostelan style, although used without much profusion. The most likely construction date is thought to be the XVII century, although probably on a pre-existing Romanesque foundation. It is located in the upper part of the village, in an elevated and dominant position over the Val dos Regos (Valley of Regos)
+
+        include ../_includes/_scripts.pug

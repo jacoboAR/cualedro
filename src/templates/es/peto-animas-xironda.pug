@@ -1,0 +1,21 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/peto-animas-xironda.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/peto-animas-xironda-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title  Horno y peto de ánimas de A Xironda
+                                p.article-text La aldea arrayana de A Xironda cuenta con múltiples atractivos. En sus proximidades se sitúa el castro de la “Cidá de Grou”, un yacimiento de la Edad del Hierro situado administrativamente en Portugal, pero que ofrece desde el lado gallego su mejor punto de observación.  <br>
+                                | A Xironda, que estuvo bajo el dominio del lejano Monasterio de Melón durante la Edad Media, cuenta además con una elegante iglesia parroquial y un extraordinario “peto de ánimas” de estilo barroco exquisitamente labrado en el ángulo de una noble casa levantada entre medianeras en el centro de la aldea. Bajo la imagen de la Virxe do Carme, de la que cuelgan varios escapularios, se consumen en el fuego purificador las ánimas (almas) pecadoras de, entre otros, un obispo y el mismísimo papa, identificados con la mitra y la tiara.
+        include ../_includes/_scripts.pug

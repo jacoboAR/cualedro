@@ -1,0 +1,21 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/peto-animas-xironda.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/peto-animas-xironda-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title  Wayside shrine of A Xironda 
+                                p.article-text The mirtle village of A Xironda has multiple attractions. In its proximities, is situated the fort of “Cidá de Grou”, an Iron Age site that is administratively situated in Portugal, but it offers its best observation point from the Galicia side. <br>
+                                | A Xironda, which was under the control of the distant Monastery of Melón during the Middle Ages, boasts an elegant parish church and an extraordinary wayside shrine (“peto de ánimas”) of baroque style, exquisitely carved resembling a noble house erected by intermediaries in the centre of the village. Under the image of the Virgin of Carmen, where they hang several scapulars, the souls of sinners are consumed by the purifying fire of, between others, a bishop and the pope himself, identified with the mitre and the tiara.
+        include ../_includes/_scripts.pug

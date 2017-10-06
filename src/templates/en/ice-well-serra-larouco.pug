@@ -1,0 +1,22 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/casa-da-neve.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/casa-da-neve-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title The Ice Well of Serra do Larouco 
+                                p.article-text The “casas da neve” or ice wells are constructions that are built in order to obtain ice from the snow collected during the winter to be consumed during the summer. The ice well that we have here is an oval shape with a depth of three metres that was dug out of the rock and from which, leads a ten metre long channel from where the melted ice can be extracted. The “neveira” (Ice Well), which used to have a roof that has long since disappeared, belonged to the House of Monterrei during the XVI and XVII centuries, as proved by a coat of arms found in its interior. <br>
+                                | The ice wells were built by monasteries, cathedral chapters, cities and feudal lords in mountain ranges. <br>
+                                | They were used, above all for the conservation of provisions, to cool down drinks and food and also for medicinal purposes.
+        include ../_includes/_scripts.pug

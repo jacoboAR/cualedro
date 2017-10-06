@@ -1,0 +1,23 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                div.carousel.slide#carousel(data-ride="carousel")
+                    div.carousel-inner(role="listbox") 
+                        div.carousel-item.active
+                            img.d-block.w-100(src="./assets/files/img/igrexa-baia.jpg", alt="1")
+                        div.carousel-item
+                            img.d-block.w-100(src="./assets/files/img/igrexa-baia-1.jpg", alt="2")
+                div.container.mt-3: div.row
+                        div.col-sm-12
+                            article.article-content.article-green
+                                h3.article-title Church of Sta. Baia
+                                p.article-text The parochial church, of baroque style, has masonry walls and a rectangular floor with presbytery; on the facade there is a lintel door with moulding on the lintel and on the lower part of the doorposts; a small bell gable crowns the whole. <br>
+                                | In the temple a magnificent sundial stands out, but above all, the remains of a roman intersection, visible on the imposts of the cemetery door and also on the tower that that has a bell tower.<br>
+                                | Here, our attention is strongly attracted to a reused semi circular fragment of tympanum in which a cross in high relief was caved, which appears to be from Malta, situated between a crescent and a galana flower. <br>
+                                | At the foot of the parish temple, a magnificent rectory house that still conserves a window at the side of its access doorway, shaped to enable the use of fire arms from the inside. Its construction was encouraged by the Jesuits; evidence of this is an inscription (“commissioned by IHS”) carved into one of its walls. The Jesuits ruled during the XVI century the famous college of Monterrei, which was built on the site that today is occupied by a Parador hotel.
+        include ../_includes/_scripts.pug

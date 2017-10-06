@@ -1,0 +1,35 @@
+doctype html
+html(lang="gl")
+    include ../_includes/_head.pug
+    body
+        main.Main(role=main)
+            div#map.Map.Map-container--min
+            div#content.Content.Content-container--max
+                include ../_includes/_header.pug
+                
+                .row.ml-0.mr-2
+                    .col-sm-6.p-0
+                        a.item-link(href="./ice-well-serra-larouco.html"): .item.item-1
+                                p.item-title: span The Ice Well of Serra do Larouco 
+                    .col-sm-6.p-0
+                        a.item-link(href="./hill-fort-saceda.html"): .item.item-2
+                                p.item-title: span Hill fort of A Saceda
+                    .col-sm-6.p-0
+                        a.item-link(href="./church-atas.html"): .item.item-3
+                                p.item-title: span Church de Atas
+                    .col-sm-6.p-0
+                        a.item-link(href="./church-sta-baia.html"): .item.item-4
+                                p.item-title: span Church de Sta. Baia
+                    .col-sm-6.p-0
+                        a.item-link(href="./milestones-lamas.html"): .item.item-5
+                                p.item-title: span The milestones of Lamas
+                    .col-sm-6.p-0
+                        a.item-link(href="./pena-muller.html"): .item.item-6
+                                p.item-title: span Pena muller
+                    .col-sm-6.p-0
+                        a.item-link(href="./wayside-shrine-xironda.html"): .item.item-7
+                                p.item-title: span Wayside shrine of A Xironda 
+                    .col-sm-6.p-0
+                        a.item-link(href="./route-mills-mercedes.html"): .item.item-8
+                                p.item-title: span Route of the water mills of As Mercedes 
+        include ../_includes/_scripts.pug
